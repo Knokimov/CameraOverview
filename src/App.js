@@ -28,7 +28,7 @@ export default class App extends React.Component {
                     });
                 })
         } else {
-            console.log("Geolocation is not supported by this browser.");
+            alert("Geolocation is not supported by this browser.");
         }
     }
 
