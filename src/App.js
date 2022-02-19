@@ -34,7 +34,7 @@ export default class App extends React.Component {
 
     render() {
         return <div>
-            <h1> Teleplan Globe Assignment </h1>
+            <h1> Camera Overview </h1>
             <Map dataToMap = {this.state.cameraList} longitude = {this.state.longitude} latitude = {this.state.latitude} />
             <SearchTable dataToTable = {this.state.cameraList} longitude = {this.state.longitude} latitude = {this.state.latitude}/>
         </div>
