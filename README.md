@@ -1,8 +1,10 @@
 # Usage
 
 Change the .env settings (Username and password)
+
     sudo apt install npm
     npm install
+    node server.js
     npm start
 
 # Getting Started with Create React App
