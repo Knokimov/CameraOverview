@@ -26,7 +26,7 @@ export default class SearchTable extends React.Component {
     }
 
     componentDidUpdate(prevProps, prevState) {
-        if (this.state.cameraList != this.props.dataToTable){
+        if (this.state.cameraList !== this.props.dataToTable){
             this.setState({
                 cameraList: this.props.dataToTable,
                 filteredList: this.sortCameraList(this.props.dataToTable)
@@ -53,7 +53,7 @@ export default class SearchTable extends React.Component {
 
     filterCameraList(string){
         string = string.toLowerCase();    
-        const result = this.state.cameraList.filter(camera => camera.stedsnavn.toLowerCase().includes(string) == true);
+        const result = this.state.cameraList.filter(camera => camera.stedsnavn.toLowerCase().includes(string) === true);
         this.setState({filteredList: result})
     }
 
