@@ -1,6 +1,7 @@
 # Usage
 
 Change the .env settings (Username and password)
+
     sudo apt install npm
     npm install
     npm start
